@@ -8,7 +8,7 @@ ms.custom:
   - ignite-2023
   - ignite-2024
 ms.topic: how-to
-ms.date: 08/14/2024
+ms.date: 12/06/2024
 LocalizationGroup: Premium
 ---
 
@@ -70,7 +70,7 @@ Trial capacities are created in your home region and don't support Multi-Geo.
 
 Follow the steps below to move workspaces from one capacity to another in the same region. During migration, certain operations might fail, such as publishing new semantic models or scheduled data refresh.
 
-1. Open the [workspace settings](../get-started/workspaces.md#workspace-settings).
+1. Open the [workspace settings](../fundamentals/workspaces.md#workspace-settings).
 
 2. From the side bar, select **License info**.
 
@@ -99,6 +99,7 @@ Large-storage format semantic models shouldn't be moved from the region where th
 * Confirm that any movement you initiate between regions follows all corporate and government compliance requirements prior to initiating data transfer.
 
 * When you're using Multi-Geo, the following items are stored in the region that isn't your home region:
+    * SQL databases
     * Models (*.ABF* files) for import and DirectQuery semantic models
     * Query cache
     * R images
